@@ -19,7 +19,6 @@ const UI = {
   },
 
   resize(W, H) {
-    if (!this._blurCanvas) return;   // not yet init'd — _resize() fires before init()
     this._blurCanvas.width  = W;
     this._blurCanvas.height = H;
   },
